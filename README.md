@@ -16,4 +16,7 @@ The list of this project is shown as follow:
 >-Dlg2.cpp  
 >-Dlg3.cpp  
 >-Dlg4.cpp  
+>-action.txt(action-goto表)  
+>-lexer.txt(词法分析结果)  
+>-ParserResult.txt(语法分析结果)  
 >-test.txt(系列测试文件)  
