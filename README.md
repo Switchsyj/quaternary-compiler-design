@@ -6,7 +6,7 @@ The list of this project is shown as follow:
 
 --report  
 >>--report.doc  
---source code  
+<<--source code  
 >>--CompilerDesign.vcxproj(工程文件)  
 >>--CompilerDesign.cpp(主类)  
 >>--CompilerDesignDlg.cpp(MFC对话框)  
@@ -14,4 +14,4 @@ The list of this project is shown as follow:
 >>--Dlg2.cpp  
 >>--Dlg3.cpp  
 >>--Dlg4.cpp  
->>  --test.txt(系列测试文件)  
+>> --test.txt(系列测试文件)  
