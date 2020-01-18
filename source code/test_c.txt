@@ -1,0 +1,13 @@
+if(a>b)
+{m=m+1;}
+else
+{
+n=n+1;
+if(c>d)
+{
+while(f>g)
+p=p+1;
+}
+else
+q=q+1;
+}

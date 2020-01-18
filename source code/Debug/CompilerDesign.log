@@ -1,0 +1,9 @@
+﻿cl : 命令行 warning D9035: “Gm”选项已否决，并将在将来的版本中移除
+  Dlg4.cpp
+c:\users\dell\desktop\课设\new\compiler design\source code\dlg4.cpp(176): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\dell\desktop\课设\new\compiler design\source code\dlg4.cpp(199): warning C4018: “<”: 有符号/无符号不匹配
+  LINK : 没有找到 .\Debug\CompilerDesign.exe 或上一个增量链接没有生成它；正在执行完全链接
+  CompilerDesign.vcxproj -> C:\Users\dell\Desktop\课设\new\compiler design\source code\.\Debug\CompilerDesign.exe
+  Microsoft (R) COFF/PE Editor Version 14.16.27025.1
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  

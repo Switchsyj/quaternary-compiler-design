@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CompilerDesign - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/CompilerDesign.res" /d "_DEBUG" /d "_AFXDLL" "C:\Users\lenovo\Desktop\CompilerDesign\CompilerDesign.rc"" 
+Creating temporary file "C:\Users\lenovo\AppData\Local\Temp\RSPEC5A.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/CompilerDesign.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\lenovo\Desktop\CompilerDesign\CompilerDesign.cpp"
+"C:\Users\lenovo\Desktop\CompilerDesign\CompilerDesignDlg.cpp"
+"C:\Users\lenovo\Desktop\CompilerDesign\Dlg1.cpp"
+"C:\Users\lenovo\Desktop\CompilerDesign\Dlg2.cpp"
+"C:\Users\lenovo\Desktop\CompilerDesign\Dlg3.cpp"
+]
+Creating command line "cl.exe @C:\Users\lenovo\AppData\Local\Temp\RSPEC5A.tmp" 
+Creating temporary file "C:\Users\lenovo\AppData\Local\Temp\RSPEC5B.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/CompilerDesign.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\lenovo\Desktop\CompilerDesign\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\lenovo\AppData\Local\Temp\RSPEC5B.tmp" 
+Creating temporary file "C:\Users\lenovo\AppData\Local\Temp\RSPEC5C.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/CompilerDesign.pdb" /debug /machine:I386 /out:"Debug/CompilerDesign.exe" /pdbtype:sept 
+.\Debug\CompilerDesign.obj
+.\Debug\CompilerDesignDlg.obj
+.\Debug\Dlg1.obj
+.\Debug\Dlg2.obj
+.\Debug\Dlg3.obj
+.\Debug\StdAfx.obj
+.\Debug\CompilerDesign.res
+]
+Creating command line "link.exe @C:\Users\lenovo\AppData\Local\Temp\RSPEC5C.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CompilerDesign.cpp
+CompilerDesignDlg.cpp
+Dlg1.cpp
+Dlg2.cpp
+Dlg3.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+CompilerDesign.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

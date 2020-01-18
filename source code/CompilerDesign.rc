@@ -1,0 +1,317 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\CompilerDesign.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\CompilerDesign.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 CompilerDesign"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "CompilerDesign 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2014",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_COMPILERDESIGN_DIALOG DIALOGEX 0, 0, 467, 206
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "CompilerDesign"
+FONT 9, "微软雅黑", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",TCS_BUTTONS | TCS_FIXEDWIDTH | TCS_FOCUSNEVER,7,22,453,177
+    LTEXT           "中间代码（四元式）的产生——使用LR分析法",IDC_STATIC,110,7,142,10
+    LTEXT           "120171080209    史元钧",IDC_STATIC,324,7,94,10
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 242, 170
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "微软雅黑", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_FILENAME,45,31,89,15,ES_AUTOHSCROLL,WS_EX_STATICEDGE
+    LTEXT           "读入的文件名为：",IDC_STATIC,11,31,30,17
+    PUSHBUTTON      "确认",IDC_OK,39,51,74,14,0,WS_EX_STATICEDGE
+    GROUPBOX        "输出的四元式如下",IDC_STATIC,7,75,228,88
+    EDITTEXT        IDC_OUT,13,89,213,71,ES_MULTILINE | ES_READONLY | WS_VSCROLL,WS_EX_STATICEDGE
+    LTEXT           "算术表达式转换为四元式",IDC_STATIC,83,8,76,9
+    GROUPBOX        "输入框",IDC_STATIC,7,18,228,52
+    LTEXT           "读入表达式为",IDC_STATIC,147,26,42,8
+    EDITTEXT        IDC_DISPLAY,144,37,83,28,ES_MULTILINE | ES_READONLY | WS_VSCROLL
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 455, 176
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "微软雅黑", 0, 0, 0x1
+BEGIN
+    LTEXT           "for语句转换为四元式",IDC_STATIC,83,7,66,8
+    EDITTEXT        IDC_FILENAME,44,31,89,15,ES_AUTOHSCROLL,WS_EX_STATICEDGE
+    PUSHBUTTON      "确认",IDC_OK,39,51,74,14,0,WS_EX_STATICEDGE
+    GROUPBOX        "输入框",IDC_STATIC,7,18,225,52
+    LTEXT           "读入表达式为",IDC_STATIC,147,26,42,8
+    EDITTEXT        IDC_DISPLAY,141,37,83,28,ES_MULTILINE | ES_READONLY | WS_VSCROLL
+    GROUPBOX        "输出的四元式如下",IDC_STATIC,7,74,225,89
+    EDITTEXT        IDC_OUT,13,91,209,69,ES_MULTILINE | ES_READONLY | WS_VSCROLL,WS_EX_STATICEDGE
+    LTEXT           "读入的文件名为：",IDC_STATIC,12,31,30,17
+    EDITTEXT        IDC_CF,241,20,207,49,ES_MULTILINE | ES_READONLY | WS_VSCROLL,WS_EX_DLGMODALFRAME
+    LTEXT           "词法分析如下：",IDC_STATIC,241,7,49,9
+    EDITTEXT        IDC_YF,241,89,207,73,ES_MULTILINE | ES_READONLY | WS_VSCROLL,WS_EX_DLGMODALFRAME
+    LTEXT           "语法分析如下：",IDC_STATIC,240,77,49,9
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 454, 176
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "微软雅黑", 0, 0, 0x1
+BEGIN
+    LTEXT           "while语句转换为四元式",IDC_STATIC,89,7,72,8
+    EDITTEXT        IDC_FILENAME,43,30,82,15,ES_AUTOHSCROLL,WS_EX_STATICEDGE
+    PUSHBUTTON      "确认",IDC_OK,31,50,74,14,0,WS_EX_STATICEDGE
+    GROUPBOX        "输入框",IDC_STATIC,7,17,227,52
+    LTEXT           "读入表达式为",IDC_STATIC,146,24,42,8
+    EDITTEXT        IDC_DISPLAY,132,36,94,28,ES_MULTILINE | ES_READONLY | WS_VSCROLL
+    GROUPBOX        "输出的四元式如下",IDC_STATIC,7,75,226,88
+    EDITTEXT        IDC_OUT,16,88,209,68,ES_MULTILINE | ES_READONLY | WS_VSCROLL,WS_EX_STATICEDGE
+    EDITTEXT        IDC_CF,238,20,209,49,ES_MULTILINE | ES_READONLY | WS_VSCROLL,WS_EX_DLGMODALFRAME
+    LTEXT           "词法分析如下：",IDC_STATIC,243,7,49,9
+    LTEXT           "读入的文件名为：",IDC_STATIC,10,31,30,17
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,239,78,208,84,WS_EX_DLGMODALFRAME
+END
+
+IDD_DIALOG4 DIALOGEX 0, 0, 454, 176
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "微软雅黑", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_FILENAME,43,30,82,15,ES_AUTOHSCROLL,WS_EX_STATICEDGE
+    PUSHBUTTON      "确认",IDC_OK,31,50,74,14,0,WS_EX_STATICEDGE
+    GROUPBOX        "输入框",IDC_STATIC,7,17,227,52
+    LTEXT           "读入表达式为",IDC_STATIC,146,24,42,8
+    EDITTEXT        IDC_DISPLAY,132,36,94,28,ES_MULTILINE | ES_READONLY | WS_VSCROLL
+    GROUPBOX        "输出的四元式如下",IDC_STATIC,7,75,226,88
+    EDITTEXT        IDC_OUT,16,88,209,68,ES_MULTILINE | ES_READONLY | WS_VSCROLL,WS_EX_STATICEDGE
+    EDITTEXT        IDC_CF,238,20,209,49,ES_MULTILINE | ES_READONLY | WS_VSCROLL,WS_EX_DLGMODALFRAME
+    LTEXT           "词法分析如下：",IDC_STATIC,243,7,49,9
+    LTEXT           "读入的文件名为：",IDC_STATIC,10,31,30,17
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,239,78,208,84,WS_EX_DLGMODALFRAME
+    LTEXT           "if-else 复合语句转换四元式",IDC_STATIC,77,7,82,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "CompilerDesign Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "CompilerDesign"
+            VALUE "LegalCopyright", "版权所有 (C) 2014"
+            VALUE "OriginalFilename", "CompilerDesign.EXE"
+            VALUE "ProductName", "CompilerDesign 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_COMPILERDESIGN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 460
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 199
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 448
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 447
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 447
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_COMPILERDESIGN_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG4 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 CompilerDesign(&A)..."
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\CompilerDesign.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
